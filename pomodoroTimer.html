@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pomodoroTimer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Sofia+Sans:wght@900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d5ec8941b.js" crossorigin="anonymous"></script>
+    <title>PomodoroTimer</title>
+
+</head>
+
+<body>
+    <main class="main_container">
+        <div>
+            <section class="container timer_box">
+                <!--Work timer-->
+                <div class="work_timer">
+                    <h2 id="work" class="label">Work:</h2>
+                    <div class="work_timer">
+                        <div id="work_timer" class="timer">
+                            <p id="w_minutes">10</p>
+                            <p class="semicolons">:</p>
+                            <p id="w_seconds">00</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Cycles-->
+                <div class="cycles_block">
+                    <h2 class="cycles" class="label">Cycles:</h2>
+                    <p id="counter" class="timer">0</p>
+                </div>
+
+
+                <!--Break timer-->
+                <div class="break_timer">
+                    <h2 id="break" class="label">Break:</h2>
+                    <div id="break_timer" class="timer">
+                        <p id="b_minutes">10</p>
+                        <p class="semicolons">:</p>
+                        <p id="b_seconds">00</p>
+                    </div>
+                </div>
+            </section>
+            <section class="choose_interval container">
+                <div class="set_time work_time">
+                    <h3>Session Length</h3>
+                    <div>
+                        <i class="fa-solid fa-circle-arrow-up plus_wm" id="plus_wm"></i>
+                        <p id="chosen_time_wm">10</p>
+                        <i class="fa-solid fa-circle-arrow-down" id="minus_wm"></i>
+                    </div>
+                </div>
+                <div class="set_time rest_time">
+                    <h3>Breack Length</h3>
+                    <div>
+                        <i class="fa-solid fa-circle-arrow-up" id="plus_bm"></i>
+                        <p id="chosen_time_bm">10</p>
+                        <i class="fa-solid fa-circle-arrow-down" id="minus_bm"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="buttons container">
+                <button id="start" class="btn"><i class="fa-solid fa-play"></i>Start</button>
+                <button id="pause" class="btn"><i class="fa-solid fa-pause"></i>Pause</button>
+                <button id="reset" class="btn"><i class="fa-solid fa-arrow-rotate-right"></i>Reset</button>
+            </section>
+        </div>
+    </main>
+    <script src="pomodoroTimer.js"></script>
+</body>
+
+</html>
